@@ -25,7 +25,7 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:hello@niranjan.com">hello@niranjan.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    <p>GitHub: <a href="https://github.com/niranju101">github.com/niranju101</a></p>
   </section>
 
   <script src="script.js"></script>
