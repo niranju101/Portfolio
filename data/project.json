@@ -3,12 +3,12 @@
     "title": "ISL Translator",
     "description": "Bidirectional Indian Sign Language translator for accessibility.",
     "tech": ["Python", "Django", "ML"],
-    "link": "https://github.com/niranju101/isl-translator"
+    "link": "https://github.com/yourusername/isl-translator"
   },
   {
     "title": "DBMS Optimizer",
     "description": "SQL query optimization tool with visualization.",
     "tech": ["SQL", "Java", "Bootstrap"],
-    "link": "https://github.com/niranju101/dbms-optimizer"
+    "link": "https://github.com/yourusername/dbms-optimizer"
   }
 ]
