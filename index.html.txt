@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niranjan's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>👋 Hi, I'm Niranjan</h1>
+    <p>MCA Student | Developer | DBMS Enthusiast</p>
+  </header>
+
+  <section id="about">
+    <img src="assets/profile.jpg" alt="Profile Picture">
+    <p>Passionate about cross-platform development, DBMS, and accessibility tech.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div id="project-list"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:hello@niranjan.com">hello@niranjan.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
