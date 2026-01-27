@@ -1,16 +1,36 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
 
-header {
-  background: linear-gradient(135deg, #24292e, #0366d6);
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+.section {
+  padding: 80px 20px;
+}
+
+.btn-primary, .btn-outline-dark {
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-outline-dark:hover {
+  transform: scale(1.05);
 }
 
 .project-card {
   transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
 }

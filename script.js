@@ -1,3 +1,13 @@
+// Initialize fullPage.js
+new fullpage('#fullpage', {
+  autoScrolling: true,
+  navigation: true,
+  anchors: ['intro', 'about', 'projects', 'contact'],
+  navigationTooltips: ['Intro', 'About', 'Projects', 'Contact'],
+  showActiveTooltip: true
+});
+
+// Load projects dynamically
 fetch('data/projects.json')
   .then(response => response.json())
   .then(projects => {
@@ -6,7 +16,7 @@ fetch('data/projects.json')
       const card = document.createElement('div');
       card.classList.add('col-md-4', 'mb-4');
       card.innerHTML = `
-        <div class="card project-card h-100">
+        <div class="card project-card h-100" data-aos="fade-up">
           <div class="card-body">
             <h5 class="card-title">${p.title}</h5>
             <p class="card-text">${p.description}</p>

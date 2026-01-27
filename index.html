@@ -4,46 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Niranjan's Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- fullPage.js CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <header class="bg-dark text-white text-center py-5">
-    <h1 class="display-4">👋 Hi, I'm Niranjan</h1>
-    <p class="lead">MCA Student | Developer | Accessibility Tech Enthusiast</p>
-    <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Work</a>
-  </header>
+<div id="fullpage">
+  <!-- Slide 1: Intro -->
+  <div class="section hero text-white text-center d-flex flex-column justify-content-center">
+    <h1 class="display-3" data-aos="fade-up">👋 Hi, I'm Niranjan</h1>
+    <p class="lead" data-aos="fade-up" data-aos-delay="200">MCA Student | Developer | Accessibility Tech Enthusiast</p>
+    <i class="fa-solid fa-arrow-down fa-2x mt-4" data-aos="fade-up" data-aos-delay="400"></i>
+  </div>
 
-  <!-- About Section -->
-  <section id="about" class="container py-5 text-center">
-    <img src="assets/profile.jpg" class="rounded-circle mb-3" width="150" alt="Profile Picture">
-    <p class="fs-5">Passionate about cross-platform development, DBMS, and accessibility tech. I love building solutions that make a difference.</p>
-  </section>
+  <!-- Slide 2: About -->
+  <div class="section text-center">
+    <img src="assets/profile.jpg" class="rounded-circle mb-3" width="150" alt="Profile Picture" data-aos="zoom-in">
+    <h2 data-aos="fade-up">About Me</h2>
+    <p class="fs-5" data-aos="fade-up" data-aos-delay="200">
+      Passionate about cross-platform development, DBMS, and accessibility tech. I love building solutions that make a difference.
+    </p>
+  </div>
 
-  <!-- Projects Section -->
-  <section id="projects" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">🚀 Projects</h2>
-      <div id="project-list" class="row"></div>
+  <!-- Slide 3: Projects -->
+  <div class="section bg-light">
+    <div class="container text-center">
+      <h2 data-aos="fade-up">🚀 Projects</h2>
+      <div id="project-list" class="row justify-content-center mt-4"></div>
     </div>
-  </section>
+  </div>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 text-center">
-    <h2>📬 Get in Touch</h2>
-    <a href="mailto:hello@niranjan.com" class="btn btn-outline-dark m-2"><i class="fa-solid fa-envelope"></i> Email</a>
-    <a href="https://github.com/niranju101" class="btn btn-outline-dark m-2"><i class="fa-brands fa-github"></i> GitHub</a>
-    <a href="https://linkedin.com/in/niranju101" class="btn btn-outline-dark m-2"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-  </section>
+  <!-- Slide 4: Contact -->
+  <div class="section text-center">
+    <h2 data-aos="fade-up">📬 Get in Touch</h2>
+    <a href="mailto:hello@niranjan.com" class="btn btn-outline-dark m-2" data-aos="fade-up" data-aos-delay="200"><i class="fa-solid fa-envelope"></i> Email</a>
+    <a href="https://github.com/niranju101" class="btn btn-outline-dark m-2" data-aos="fade-up" data-aos-delay="300"><i class="fa-brands fa-github"></i> GitHub</a>
+    <a href="https://linkedin.com/in/niranju101" class="btn btn-outline-dark m-2" data-aos="fade-up" data-aos-delay="400"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+  </div>
+</div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+<!-- JS Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>
