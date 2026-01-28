@@ -15,9 +15,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- Navigation Bar -->
   <header class="navbar">
-    <div class="logo">N</div>
+    <div class="logo" aria-label="Home">N</div>
     <nav>
       <a href="#about">About Me</a>
       <a href="#skills">Skills</a>
@@ -27,48 +28,71 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" aria-labelledby="hero-title">
     <div class="hero-left">
-      <h1>Hi, I am </h1><span>Niranjan A V</span></h1>
-      <p>Developer / Accessibility Tech Enthusiast</p>
+      <h1 id="hero-title">
+        Hi, I am<br />
+        <span class="name">Niranjan&nbsp;A&nbsp;V</span>
+      </h1>
+
+      <p class="subtitle">
+        Developer · Accessibility Tech Enthusiast
+      </p>
+
       <div class="social-icons">
-        <a href="mailto:niranjuv0@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://github.com/niranju101"><i class="fa-brands fa-github"></i></a>
-        <a href="https://linkedin.com/in/niranjan-a-v"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:niranjuv0@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://github.com/niranjan101" aria-label="GitHub" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/niranjan-a-v" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
       </div>
     </div>
+
     <div class="hero-right">
-      <img src="assets/image.jpg" alt="Niranjan's Photo" />
+      <img src="assets/image.jpg" alt="Portrait of Niranjan A V" />
     </div>
   </section>
 
-  <!-- Placeholder Sections -->
   <!-- About Section -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <div class="about-content">
-    <p>
-      I’m Niranjan A V, currently pursuing MCA at KVM College of Engineering & IT. 
-      With a strong foundation in SQL, Java, Python, and cross‑platform frameworks like Flutter, 
-      I’m passionate about building accessible technology solutions and modern web applications. 
-      My focus is on creating recruiter‑friendly portfolio sites, automation workflows, and inclusive designs 
-      that make technology usable for everyone.
-    </p>
-    <p>
-      I thrive on solving real‑world problems with clean, modular code and visually engaging interfaces. 
-      My recent work includes a bidirectional Indian Sign Language translator project aimed at empowering 
-      communication for deaf/mute users.
-    </p>
-    <a href="assets/Niranjan-Resume.pdf" class="btn" download>
-      <i class="fa-solid fa-file-pdf"></i> Download Resume
-    </a>
-  </div>
-</section>
-  <section id="skills" class="section">Skills</section>
-  <section id="portfolio" class="section">Portfolio</section>
-  <section id="contact" class="section">Contact Me</section>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>
+        I’m Niranjan A V, currently pursuing MCA at KVM College of Engineering & IT.
+        I work with SQL, Java, Python, and Flutter, and I’m passionate about building
+        accessible and inclusive technology.
+      </p>
+      <p>
+        My recent work includes a bidirectional Indian Sign Language translator aimed
+        at improving communication for deaf and mute users.
+      </p>
+      <a href="assets/Niranjan-Resume.pdf" class="btn" download type="application/pdf">
+        <i class="fa-solid fa-file-pdf"></i> Download Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+  </section>
 
   <!-- Scripts -->
   <script src="script.js"></script>
+
 </body>
 </html>
