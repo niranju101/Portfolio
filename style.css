@@ -158,3 +158,40 @@ nav a:hover {
 .btn:hover {
   background: #5a3d91;
 }
+.btn {
+  background: #764ba2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 10px;
+  transition: background 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #5a3d91;
+  transform: scale(1.05);
+}
+/* Animation states */
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark mode */
+.dark-mode {
+  background: #111;
+  color: #eee;
+}
+.dark-mode .section {
+  background: #222;
+}
+.dark-mode a, .dark-mode .btn {
+  color: #eee;
+}

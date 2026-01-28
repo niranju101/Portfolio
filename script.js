@@ -1,30 +1,33 @@
-// Initialize fullPage.js
-new fullpage('#fullpage', {
-  autoScrolling: true,
-  navigation: true,
-  anchors: ['intro', 'about', 'projects', 'contact'],
-  navigationTooltips: ['Intro', 'About', 'Projects', 'Contact'],
-  showActiveTooltip: true
+// ===== Scroll Animations =====
+const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+sections.forEach(section => {
+  observer.observe(section);
 });
 
-// Load projects dynamically
-fetch('data/projects.json')
-  .then(response => response.json())
-  .then(projects => {
-    const container = document.getElementById('project-list');
-    projects.forEach(p => {
-      const card = document.createElement('div');
-      card.classList.add('col-md-4', 'mb-4');
-      card.innerHTML = `
-        <div class="card project-card h-100" data-aos="fade-up">
-          <div class="card-body">
-            <h5 class="card-title">${p.title}</h5>
-            <p class="card-text">${p.description}</p>
-            <p><strong>Tech:</strong> ${p.tech.join(', ')}</p>
-            <a href="${p.link}" target="_blank" class="btn btn-primary">View on GitHub</a>
-          </div>
-        </div>
-      `;
-      container.appendChild(card);
-    });
+// ===== Smooth Scroll for Navigation =====
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href'))
+      .scrollIntoView({ behavior: 'smooth' });
   });
+});
+
+// ===== Dark Mode Toggle =====
+const toggleBtn = document.createElement('button');
+toggleBtn.innerText = "🌙 Toggle Dark Mode";
+toggleBtn.classList.add('btn');
+document.body.appendChild(toggleBtn);
+
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
