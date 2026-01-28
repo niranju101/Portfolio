@@ -6,7 +6,7 @@
   <title>Niranjan A V | Developer Portfolio</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -15,76 +15,38 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Niranjan</div>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact" class="contact-btn">Contact Me</a>
+    </nav>
+  </header>
+
   <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Hi, I am <span>Niranjan A V</span></h1>
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Hi, I am<br><span>Niranjan A V</span></h1>
       <p>Developer / Accessibility Tech Enthusiast</p>
       <div class="social-icons">
         <a href="mailto:hello@niranjan.com"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://github.com/niranju101"><i class="fa-brands fa-github"></i></a>
         <a href="https://linkedin.com/in/niranju101"><i class="fa-brands fa-linkedin"></i></a>
       </div>
-      <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Portfolio</a>
-        <a href="#contact" class="contact-btn">Contact Me</a>
-      </nav>
     </div>
-    <div class="hero-image">
+    <div class="hero-right">
       <img src="assets/image.jpg" alt="Niranjan's Photo" />
     </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I’m currently pursuing MCA at KVM College of Engineering & IT. With a strong foundation in SQL, Java, Python, and cross‑platform frameworks like Flutter, I’m passionate about building accessible technology solutions. My MCA project focuses on a bidirectional Indian Sign Language translator to empower communication for deaf/mute users.
-    </p>
-    <a href="assets/Niranjan-Resume.pdf" class="btn" download>
-      <i class="fa-solid fa-file-pdf"></i> Download Resume
-    </a>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section bg-light">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill"><i class="fa-brands fa-python"></i> Python</div>
-      <div class="skill"><i class="fa-brands fa-java"></i> Java</div>
-      <div class="skill"><i class="fa-solid fa-database"></i> SQL</div>
-      <div class="skill"><i class="fa-brands fa-html5"></i> HTML/CSS</div>
-      <div class="skill"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
-      <div class="skill"><i class="fa-brands fa-android"></i> Flutter</div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>ISL Translator</h3>
-        <p>Bidirectional Indian Sign Language translator for accessibility.</p>
-        <a href="https://github.com/niranju101/isl-translator" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <h3>DBMS Optimizer</h3>
-        <p>SQL query optimization tool with visualization.</p>
-        <a href="https://github.com/niranju101/dbms-optimizer" target="_blank">View on GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section bg-light text-center">
-    <h2>📬 Get in Touch</h2>
-    <a href="mailto:hello@niranjan.com" class="btn">Email</a>
-    <a href="https://github.com/niranju101" class="btn">GitHub</a>
-    <a href="https://linkedin.com/in/niranju101" class="btn">LinkedIn</a>
-  </section>
+  <!-- Placeholder Sections -->
+  <section id="about" class="section">About Me</section>
+  <section id="skills" class="section">Skills</section>
+  <section id="portfolio" class="section">Portfolio</section>
+  <section id="contact" class="section">Contact Me</section>
 
   <!-- Scripts -->
   <script src="script.js"></script>
