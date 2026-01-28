@@ -1,51 +1,73 @@
+/* Global Styles */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  color: #333;
+  color: #111111; /* black text */
   background: #ffffff; /* white background */
 }
 
-.container {
+/* Hero Section */
+.hero {
   display: flex;
   height: 100vh;
+  background: linear-gradient(135deg, #09cd8f, #ffb347); /* green → light orange gradient */
+  color: #ffffff;
 }
 
-.left-panel {
+.hero-content {
   width: 50%;
-  background: #ffffff; /* white panel */
   padding: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.right-panel {
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.hero-content h1 span {
+  color: #111111; /* black accent inside gradient */
+  background: #ffffff;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 15px 0 30px;
+}
+
+.hero-image {
   width: 50%;
-  background: #111111; /* black panel */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.right-panel img {
+.hero-image img {
   max-width: 80%;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
 }
 
-.intro h1 span {
-  color: #09cd8f; /* green accent */
-}
-
+/* Social Icons */
 .social-icons a {
   margin-right: 15px;
   font-size: 1.5rem;
-  color: #333;
+  color: #ffffff;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #ffb347; /* light orange hover */
+  color: #111111; /* black hover */
+}
+
+/* Navigation */
+nav {
+  margin-top: 40px;
 }
 
 nav a {
@@ -53,23 +75,24 @@ nav a {
   margin-right: 20px;
   font-weight: 500;
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #09cd8f; /* green hover */
+  color: #111111;
 }
 
 .contact-btn {
-  background: #09cd8f; /* green button */
-  color: white;
+  background: #111111;
+  color: #ffffff;
   padding: 10px 20px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
 }
 
+/* Sections */
 .section {
   padding: 80px 20px;
   text-align: center;
@@ -79,7 +102,15 @@ nav a:hover {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #111111; /* black headings */
+  color: #111111;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .skill {
@@ -93,7 +124,15 @@ nav a:hover {
 .skill:hover {
   transform: scale(1.1);
   background: #ffb347; /* light orange hover */
-  color: #111111; /* black text */
+  color: #111111;
+}
+
+/* Projects */
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .project-card {
@@ -110,15 +149,20 @@ nav a:hover {
   box-shadow: 0 12px 30px rgba(9, 205, 143, 0.4); /* green glow */
 }
 
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
 .project-card a {
   text-decoration: none;
   color: #09cd8f; /* green links */
   font-weight: 600;
 }
 
+/* Buttons */
 .btn {
-  background: #ffb347; /* light orange button */
-  color: #111111; /* black text */
+  background: #ffb347; /* light orange */
+  color: #111111;
   padding: 10px 20px;
   border-radius: 30px;
   text-decoration: none;
@@ -129,11 +173,11 @@ nav a:hover {
 
 .btn:hover {
   background: #09cd8f; /* green hover */
-  color: #ffffff; /* white text */
+  color: #ffffff;
   transform: scale(1.05);
 }
 
-/* Animation states */
+/* Animations */
 .section {
   opacity: 0;
   transform: translateY(40px);
@@ -144,7 +188,7 @@ nav a:hover {
   transform: translateY(0);
 }
 
-/* Dark mode */
+/* Dark Mode */
 .dark-mode {
   background: #111111;
   color: #ffffff;
